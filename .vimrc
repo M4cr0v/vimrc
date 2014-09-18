@@ -162,6 +162,7 @@ endif
 "terryma/vim-expand-region  :h vim-expand-region
 "terryma/vim-multiple-cursors  :h vim-multiple-cursors
 "Valloric/YouCompleteMe  :h YouCompleteMe
+"vim-voom/VOoM"  :h voom
 "wesleyche/SrcExpl  :h srcexpl
 "wesleyche/Trinity
 
@@ -293,6 +294,7 @@ Bundle 'sjl/gundo.vim'
 Bundle 'terryma/vim-expand-region'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-voom/VOoM'
 Bundle 'wesleyche/SrcExpl'
 Bundle 'wesleyche/Trinity'
 
