@@ -156,6 +156,7 @@ endif
 "kien/ctrlp.vim  :h ctrlp
 "Lokaltog/vim-easymotion  :h easymotion
 "mbbill/fencview
+"nathanaelkane/vim-indent-guides  :h indent-guides
 "rosenfeld/conque-term  :help ConqueTerm  （vim-scripts/Conque-Shell上的不全，只能找个个人repo）
 "SirVer/ultisnips  :h ultisnips
 "sjl/gundo.vim  :h gundo
@@ -288,6 +289,7 @@ Bundle 'honza/vim-snippets'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'mbbill/fencview'
+Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'rosenfeld/conque-term'
 Bundle 'SirVer/ultisnips'
 Bundle 'sjl/gundo.vim'
@@ -487,6 +489,14 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
 nmap <leader>gd :YcmCompleter GoTo<CR>
+
+""""""""""""""""""""""""""""""
+" indent-guides configuration
+""""""""""""""""""""""""""""""
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+let g:indent_guides_guide_size=1
 
 """"""""""""""""""""""""""""""
 " 
