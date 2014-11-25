@@ -150,6 +150,7 @@ endif
 "vim-scripts/VimIM
 "vim-scripts/Visual-Mark
 "vim-scripts/winmanager  :h winmanager
+"bling/vim-airline  :h airline
 "dyng/ctrlsf.vim  :h ctrlsf  <C-j>next  <C-k>previous  p preview
 "godlygeek/tabular  :h tabular
 "honza/vim-snippets  （给Snipmate或UltiSnip用的Snippets）
@@ -283,6 +284,7 @@ Bundle 'The-NERD-tree'
 Bundle 'VimIM'
 Bundle 'Visual-Mark'
 Bundle 'winmanager'
+Bundle 'bling/vim-airline'
 Bundle 'dyng/ctrlsf.vim'
 Bundle 'godlygeek/tabular'
 Bundle 'honza/vim-snippets'
@@ -499,6 +501,15 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 let g:indent_guides_guide_size=1
+
+""""""""""""""""""""""""""""""
+" vim-airline configuration
+""""""""""""""""""""""""""""""
+"let g:airline_section_b = '%{strftime("%c")}'
+"let g:airline_section_y = 'BN: %{bufnr("%")}'
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#left_sep = ' '
+"let g:airline#extensions#tabline#left_alt_sep = '|'
 
 """"""""""""""""""""""""""""""
 " 
