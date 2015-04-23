@@ -226,6 +226,22 @@ set foldcolumn=5 "Display Fold With + and -
 set foldmethod=syntax
 set foldlevel=100 "do not fold while starting
 
+""""""""""""""""""""""""""""""
+" Automatically add Python paths to Vim path
+""""""""""""""""""""""""""""""
+if has("unix")
+" http://vim.wikia.com/wiki/Automatically_add_Python_paths_to_Vim_path
+python << endpython
+import os
+import sys
+import vim
+for p in sys.path:
+    # Add each directory in sys.path, if it exists.
+    if os.path.isdir(p):
+        # Command 'set' needs backslash before each space.
+        vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
+endpython
+endif
 
 """"""""""""""""""""""""""""""
 " vundle configuration
