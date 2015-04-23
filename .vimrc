@@ -171,15 +171,21 @@ endif
 """"""""""""""""""""""""""""""
 " key map
 """"""""""""""""""""""""""""""
+" With a map leader it's possible to do extra key combinations
+" like <leader>w saves the current file
+let mapleader = ","
+let g:mapleader = ","
+let maplocalleader = ","
+let g:maplocalleader = ","
 "code style
-nmap cs :%!indent -kr -i8<cr>
+nmap <leader>cs :%!indent -kr -i8<cr>
 "open vimrc file
 if (has("win32") || has("win95") || has("win16"))
-    nmap rc :e C:/Program\ Files/Vim/_vimrc<cr>
+    nmap <leader>rc :e C:/Program\ Files/Vim/_vimrc<cr>
 elseif (has("win64"))
-    nmap rc :e C:/Program\ Files\ (x86)/Vim/_vimrc<cr>
+    nmap <leader>rc :e C:/Program\ Files\ (x86)/Vim/_vimrc<cr>
 elseif (has("unix"))
-    nmap rc :e ~/.vimrc<cr>
+    nmap <leader>rc :e ~/.vimrc<cr>
 endif
 """"""""""""""""""""""""""""""
 " encoding configuration
@@ -207,12 +213,6 @@ elseif (has("win64"))
 elseif has("unix")
     helptags ~/.vim/doc
 endif
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = ","
-let g:mapleader = ","
-let maplocalleader = ","
-let g:maplocalleader = ","
 set expandtab
 set tabstop=4
 set shiftwidth=4
