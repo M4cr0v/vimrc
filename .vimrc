@@ -163,6 +163,7 @@ endif
 "sjl/gundo.vim  :h gundo
 "terryma/vim-expand-region  :h vim-expand-region
 "terryma/vim-multiple-cursors  :h vim-multiple-cursors
+"tmhedberg/SimpylFold  :h SimpylFold
 "Valloric/YouCompleteMe  :h YouCompleteMe
 "vim-voom/VOoM"  :h voom
 "wesleyche/SrcExpl  :h srcexpl
@@ -313,6 +314,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'sjl/gundo.vim'
 Bundle 'terryma/vim-expand-region'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'tmhedberg/SimpylFold'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-voom/VOoM'
 Bundle 'wesleyche/SrcExpl'
