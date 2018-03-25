@@ -168,6 +168,7 @@ endif
 "vim-voom/VOoM"  :h voom
 "wesleyche/SrcExpl  :h srcexpl
 "wesleyche/Trinity
+"Yggdroot/LeaderF  :h leaderf
 
 """"""""""""""""""""""""""""""
 " key map
@@ -319,6 +320,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-voom/VOoM'
 Bundle 'wesleyche/SrcExpl'
 Bundle 'wesleyche/Trinity'
+Bundle 'Yggdroot/LeaderF'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
