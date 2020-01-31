@@ -169,6 +169,7 @@ endif
 "wesleyche/SrcExpl  :h srcexpl
 "wesleyche/Trinity
 "Yggdroot/LeaderF  :h leaderf
+"Vimjas/vim-python-pep8-indent
 
 """"""""""""""""""""""""""""""
 " key map
@@ -321,6 +322,7 @@ Bundle 'vim-voom/VOoM'
 Bundle 'wesleyche/SrcExpl'
 Bundle 'wesleyche/Trinity'
 Bundle 'Yggdroot/LeaderF'
+Bundle 'Vimjas/vim-python-pep8-indent'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -533,6 +535,12 @@ let g:indent_guides_guide_size=1
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
+
+""""""""""""""""""""""""""""""
+" vim-python-pep8-indent configuration
+""""""""""""""""""""""""""""""
+"let g:python_pep8_indent_multiline_string = 0
+"let g:python_pep8_indent_hang_closing = 0
 
 """"""""""""""""""""""""""""""
 " 
