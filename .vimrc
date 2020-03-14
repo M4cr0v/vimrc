@@ -170,6 +170,7 @@ endif
 "wesleyche/Trinity
 "Yggdroot/LeaderF  :h leaderf
 "Vimjas/vim-python-pep8-indent
+"tpope/vim-speeddating  :h speeddating
 
 """"""""""""""""""""""""""""""
 " key map
@@ -323,6 +324,7 @@ Bundle 'wesleyche/SrcExpl'
 Bundle 'wesleyche/Trinity'
 Bundle 'Yggdroot/LeaderF'
 Bundle 'Vimjas/vim-python-pep8-indent'
+Bundle 'tpope/vim-speeddating'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
