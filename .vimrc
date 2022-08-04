@@ -168,7 +168,7 @@ endif
 "vim-voom/VOoM"  :h voom
 "wesleyche/SrcExpl  :h srcexpl
 "wesleyche/Trinity
-"Yggdroot/LeaderF  :h leaderf
+"Yggdroot/LeaderF  :h leaderf :Leaderf self
 "Vimjas/vim-python-pep8-indent
 "tpope/vim-speeddating  :h speeddating
 
@@ -537,6 +537,30 @@ let g:indent_guides_guide_size=1
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline#extensions#tabline#left_sep = ' '
 "let g:airline#extensions#tabline#left_alt_sep = '|'
+
+""""""""""""""""""""""""""""""
+" LeaderF configuration
+""""""""""""""""""""""""""""""
+" Install the ripgrep from https://github.com/BurntSushi/ripgrep/releases
+" Install the C extension
+" :LeaderfInstallCExtension
+" help:
+" :LeaderfSelf
+" :h g:Lf_CommandMap
+" :Leaderf rg -h
+"
+" let g:Lf_WindowPosition = 'popup'
+" let g:Lf_PreviewInPopup = 1
+" let g:Lf_CommandMap = {'<C-N>': ['<Up>'], '<C-P>': ['<Down>']}
+noremap <leader>fs :Leaderf self<CR>
+let g:Lf_ShortcutF = "<C-P>"
+noremap <leader>ff :Leaderf file<CR>
+" let g:Lf_ShortcutB = "<leader>fb"
+noremap <leader>fb :<C-U><C-R>=printf("Leaderf buffer %s", "")<CR><CR>
+noremap <leader>fm :<C-U><C-R>=printf("Leaderf mru %s", "")<CR><CR>
+noremap <leader>ft :<C-U><C-R>=printf("Leaderf bufTag %s", "")<CR><CR>
+noremap <leader>fl :<C-U><C-R>=printf("Leaderf line %s", "")<CR><CR>
+noremap <leader>fr :Leaderf rg<CR>
 
 """"""""""""""""""""""""""""""
 " vim-python-pep8-indent configuration
